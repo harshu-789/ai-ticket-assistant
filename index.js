@@ -8,7 +8,8 @@ import {inngest} from './inngest/client.js';
 import { onSignup } from './inngest/functions/on-signup.js';
 import { onTicketCreate } from './inngest/functions/on-ticket-create.js';
 
-
+import dotenv from 'dotenv';
+dotenv.config();
 
 const PORT = process.env.PORT || 3000;
 const app = express();
